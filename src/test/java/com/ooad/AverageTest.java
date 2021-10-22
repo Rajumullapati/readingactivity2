@@ -13,16 +13,14 @@ public class AverageTest extends TestCase{
         int[] list = new int[]{1,2,3,4,5,6,7};
         int k = 3;
         int avg = 2;
-        int result = this.avg.average(k, list);
-        assertTrue(result == avg);
+        assertTrue(avg == this.avg.average(k, list));
      }
 
      public void testAverageKGreater(){
         int[] list = new int[]{1,2,3,4,5,6,7};
         int k = 4;
-        int avg = (1+2+3+4)/4;
-        int result = this.avg.average(k, list);
-        assertTrue(result == avg);
+        double avg = 2.5;
+        assertTrue(avg == this.avg.average(k, list));
      }
 
 
@@ -30,8 +28,7 @@ public class AverageTest extends TestCase{
         int[] list = new int[]{1,2,3,4,5,6,7};
         int k = 10;
         int avg = 28/7;
-        int result = this.avg.average(k, list);
-        assertTrue(result == avg);
+        assertTrue(avg == this.avg.average(k, list));
      }
 
      public void testAverageDivideByZero(){

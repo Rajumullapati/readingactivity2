@@ -1,0 +1,4 @@
+*.class
+target/classes/com/ooad/Average.class
+target/test-classes/com/ooad/AverageTest.class
+target/

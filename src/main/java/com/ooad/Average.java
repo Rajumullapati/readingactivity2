@@ -1,9 +1,9 @@
 package com.ooad;
 public class Average {
 
-    public int average(int k, int[] list){
+    public double average(int k, int[] list){
     
-                      int average = 0;
+                      double average = 0;
                       int n = Math.min(k, list.length);
                       if( n > 0) {
                                   for(int i = 0 ; i < n; i++){
